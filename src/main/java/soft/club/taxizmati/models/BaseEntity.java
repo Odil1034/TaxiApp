@@ -1,8 +1,6 @@
 package soft.club.taxizmati.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,13 +18,13 @@ import java.time.LocalDateTime;
 @Setter
 @SuperBuilder
 @NoArgsConstructor
-@AllArgsConstructor
 public abstract class BaseEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @CreatedBy
-    private Long owner_id;
+    private Long createdBy;
     @CreatedDate
     private LocalDateTime createdAt;
     @LastModifiedDate
@@ -35,3 +33,4 @@ public abstract class BaseEntity {
     private Long modifiedBy;
 
 }
+
