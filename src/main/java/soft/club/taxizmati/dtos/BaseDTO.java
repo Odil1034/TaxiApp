@@ -1,4 +1,5 @@
 package soft.club.taxizmati.dtos;
 
-public record LoginDTO() {
+public interface BaseDTO {
+
 }

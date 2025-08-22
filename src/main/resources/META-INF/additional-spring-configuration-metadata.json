@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "springdoc.swagger-ui.path",
+      "type": "java.lang.String",
+      "description": "Description for springdoc.swagger-ui.path."
+    },
+    {
+      "name": "springdoc.api-docs.path",
+      "type": "java.lang.String",
+      "description": "Description for springdoc.api-docs.path."
+    }
+  ]
+}
