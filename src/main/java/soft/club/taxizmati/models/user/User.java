@@ -56,6 +56,7 @@ public class User extends BaseEntity {
     @Column(name = "birth_date")
     private LocalDate birthDay;
 
+
     @OneToOne
     @JoinColumn(name = "image_id")
     private Image profileImage;
